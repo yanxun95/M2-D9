@@ -1,0 +1,42 @@
+.fade-in-ex1 {
+  animation: fadeInAnimation linear 0.5s;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.favorite-albums {
+  position: relative;
+}
+
+.bi-heart-fill {
+  position: absolute;
+  top: 0;
+  left: 3px;
+}
+
+.editSong {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.editSong:hover {
+  opacity: 1;
+}
+
+.btn.btn-add {
+  transform: scale(1);
+  transition: transform box-shadow 0.3s ease-out;
+}
+
+.btn.btn-add:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 10px 10px black;
+  z-index: 1;
+}

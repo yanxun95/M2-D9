@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!-- saved from url=(0436)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/473750282380397.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RCEE6YREN%2F20210715%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210715T120030Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27M2-D9.html&X-Amz-Signature=8410e69750d2bc8db2215771bcc55471bf86a69d3edd5bc79a15a3bcd0060a3b -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script data-dapp-detection="">
+      !(function () {
+        let e = !1;
+        function n() {
+          if (!e) {
+            const n = document.createElement("meta");
+            (n.name = "dapp-detected"), document.head.appendChild(n), (e = !0);
+          }
+        }
+        if (window.hasOwnProperty("ethereum")) {
+          if (
+            ((window.__disableDappDetectionInsertion = !0),
+            void 0 === window.ethereum)
+          )
+            return;
+          n();
+        } else {
+          var t = window.ethereum;
+          Object.defineProperty(window, "ethereum", {
+            configurable: !0,
+            enumerable: !1,
+            set: function (e) {
+              window.__disableDappDetectionInsertion || n(), (t = e);
+            },
+            get: function () {
+              if (!window.__disableDappDetectionInsertion) {
+                const e = arguments.callee;
+                (e &&
+                  e.caller &&
+                  e.caller.toString &&
+                  -1 !== e.caller.toString().indexOf("getOwnPropertyNames")) ||
+                  n();
+              }
+              return t;
+            },
+          });
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    -->
+
+    <div class="container">
+      <div class="jumbotron fade-in-ex1">
+        <h1 class="display-4">Exercise 1</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+      </div>
+    </div>
+
+    <!-- EXERCISE 2
+        Use the Bootstrap Card to contain every album in the favorite list.
+        Use the elements of a card to display nicely the album informations such as album title, artist, year, etc..
+    -->
+
+    <div class="container">
+      <h1>Favorite list</h1>
+      <div class="row">
+        <div class="col-6 col-sm-4 col-lg-3">
+          <div class="card">
+            <div class="favorite-albums">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png"
+                class="card-img-top"
+                alt="album"
+              />
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title albumTitle">Album title</h5>
+              <p class="card-text">Artist: <br />Year:</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3">
+          <div class="card">
+            <div class="favorite-albums">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png"
+                class="card-img-top"
+                alt="album"
+              />
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title albumTitle">Album title</h5>
+              <p class="card-text">Artist: <br />Year:</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3">
+          <div class="card">
+            <div class="favorite-albums">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png"
+                class="card-img-top"
+                alt="album"
+              />
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title albumTitle">Album title</h5>
+              <p class="card-text">Artist: <br />Year:</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-3">
+          <div class="card">
+            <div class="favorite-albums">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png"
+                class="card-img-top"
+                alt="album"
+              />
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title albumTitle">Album title</h5>
+              <p class="card-text">Artist: <br />Year:</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXERCISE 3
+        Foreach album in the favorite list, place a badge on top of it with the genre of the album
+    -->
+
+    <!-- EXERCISE 4
+        Create a section with an album tracklist inside a Bootstrap table.
+        The row colors of the table must be alternated.
+
+        There should be a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+
+    <div class="container mt-5">
+      <h1>TrackList</h1>
+      <table class="table table-success table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Song name1</td>
+            <td>3:20</td>
+            <td class="editSong">
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="delTrackListSong(this)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Song name2</td>
+            <td>3:50</td>
+            <td class="editSong">
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="delTrackListSong(this)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Song name3</td>
+            <td>2:49</td>
+            <td class="editSong">
+              <button
+                type="button"
+                class="btn btn-danger"
+                onclick="delTrackListSong(this)"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked.  
+
+        ##EXTRA##
+        Make only one button visible at a time, for each row, when the single row gets hovered. 
+        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+    -->
+
+    <!-- EXERCISE 6
+        Add an "Add Track" button under the tracklist of the album. 
+        It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look like 
+        the button was elevating itself every time the user hovers onto it.        
+    -->
+
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-primary btn-add"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Add Track
+      </button>
+    </div>
+
+    <!-- EXERCISE 7
+        On the click of "Add Track" button, a modal should appear.
+        (check in the documentation the modal+button example)
+        
+        The modal shall contain input fields with (avoid using a <form>):
+        - Track number
+        - Track title
+        - Track duration
+        - Track featuring
+        - Live Track (checkbox)
+
+        The fields should be inside an Input Group and divided in 2 columns.
+    -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="track-number" class="col-form-label"
+                  >Track number:</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Message:</label
+                >
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXERCISE 8
+        The modal should contain 2 buttons at the bottom:
+        - Add => Adds a new track in the tracklist with the data of the input fields.
+        - Close => closes the modal
+
+        https://getbootstrap.com/docs/4.6/components/alerts/
+        [EXTRA] Make the message disappear after 5 seconds
+        https://www.w3schools.com/jsref/met_win_settimeout.asp
+    -->
+
+    <!-- EXERCISE 8
+        Alert the user with a success message when the track gets added, or when a track gets deleted.
+     -->
+
+    <!-- ############### -->
+    <!-- ###  EXTRA  ### -->
+    <!-- ############### -->
+
+    <!-- EXERCISE 9
+         All the field (except for Feat. and Live Track) are required fields and require validation.
+         If the user clicks on the Add button and some fields are empty, a warning alert must be shown
+     -->
+
+    <!-- EXERCISE 10
+        Make sure the "Close" button clears out the input fields AND closes the modal
+     -->
+
+    <!-- EXERCISE 11
+        Considering the "Add Track" functionality that you've created on ex. 8: 
+         - The new list-element added to the list should appear with a fade-in effect
+     -->
+
+    <!-- EXERCISE 12
+        Considering the button you've created in ex. 5 that deletes the row:
+        Add a fade-out effect to the row before it gets removed, using a CSS transition effect
+    -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
