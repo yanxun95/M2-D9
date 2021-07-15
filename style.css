@@ -11,6 +11,10 @@
   }
 }
 
+.card {
+  overflow: hidden;
+}
+
 .favorite-albums {
   position: relative;
 }
@@ -39,4 +43,15 @@
   transform: scale(1.2);
   box-shadow: 5px 10px 10px black;
   z-index: 1;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.delete-fade-out {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.delete-fade-out::after {
 }

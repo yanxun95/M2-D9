@@ -85,7 +85,7 @@
     <div class="container">
       <h1>Favorite list</h1>
       <div class="row">
-        <div class="col-6 col-sm-4 col-lg-3">
+        <div class="col-6 col-sm-4 col-lg-4">
           <div class="card">
             <div class="favorite-albums">
               <img
@@ -98,10 +98,76 @@
             <div class="card-body">
               <h5 class="card-title albumTitle">Album title</h5>
               <p class="card-text">Artist: <br />Year:</p>
+              <h5>TrackList</h5>
+              <table class="table table-success table-striped" id="table1">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Song name1</td>
+                    <td>3:20</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table1', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Song name2</td>
+                    <td>3:50</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table1', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Song name3</td>
+                    <td>2:49</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table1', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="container">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-add"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="btnClose()"
+                >
+                  Add Track
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-lg-3">
+        <div class="col-6 col-sm-4 col-lg-4">
           <div class="card">
             <div class="favorite-albums">
               <img
@@ -114,10 +180,76 @@
             <div class="card-body">
               <h5 class="card-title albumTitle">Album title</h5>
               <p class="card-text">Artist: <br />Year:</p>
+              <h5>TrackList</h5>
+              <table class="table table-success table-striped" id="table2">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Song name1</td>
+                    <td>3:20</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table2', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Song name2</td>
+                    <td>3:50</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table2', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Song name3</td>
+                    <td>2:49</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table2', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="container">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-add"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="btnClose()"
+                >
+                  Add Track
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-6 col-sm-4 col-lg-3">
+        <div class="col-6 col-sm-4 col-lg-4">
           <div class="card">
             <div class="favorite-albums">
               <img
@@ -130,22 +262,72 @@
             <div class="card-body">
               <h5 class="card-title albumTitle">Album title</h5>
               <p class="card-text">Artist: <br />Year:</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-3">
-          <div class="card">
-            <div class="favorite-albums">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/a/ad/X_cover.png"
-                class="card-img-top"
-                alt="album"
-              />
-              <i class="bi bi-heart-fill"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title albumTitle">Album title</h5>
-              <p class="card-text">Artist: <br />Year:</p>
+              <h5>TrackList</h5>
+              <table class="table table-success table-striped" id="table3">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Song name1</td>
+                    <td>3:20</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table3', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Song name2</td>
+                    <td>3:50</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table3', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Song name3</td>
+                    <td>2:49</td>
+                    <td class="editSong">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        onclick="delTrackListSong('table3', this)"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="container">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-add"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  onclick="btnClose()"
+                >
+                  Add Track
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -164,64 +346,6 @@
         (If you want, you can also add extra columns)
     -->
 
-    <div class="container mt-5">
-      <h1>TrackList</h1>
-      <table class="table table-success table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Duration</th>
-            <th scope="col">Edit</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Song name1</td>
-            <td>3:20</td>
-            <td class="editSong">
-              <button
-                type="button"
-                class="btn btn-danger"
-                onclick="delTrackListSong(this)"
-              >
-                Delete
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Song name2</td>
-            <td>3:50</td>
-            <td class="editSong">
-              <button
-                type="button"
-                class="btn btn-danger"
-                onclick="delTrackListSong(this)"
-              >
-                Delete
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Song name3</td>
-            <td>2:49</td>
-            <td class="editSong">
-              <button
-                type="button"
-                class="btn btn-danger"
-                onclick="delTrackListSong(this)"
-              >
-                Delete
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
     <!-- EXERCISE 5
         Add a DELETE bootstrap button at the end of each row of the tracklist. 
         Attach the functionality to remove its row when it gets clicked.  
@@ -236,17 +360,6 @@
         It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look like 
         the button was elevating itself every time the user hovers onto it.        
     -->
-
-    <div class="container">
-      <button
-        type="button"
-        class="btn btn-primary btn-add"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        Add Track
-      </button>
-    </div>
 
     <!-- EXERCISE 7
         On the click of "Add Track" button, a modal should appear.
@@ -281,30 +394,53 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="track-number" class="col-form-label"
-                  >Track number:</label
-                >
-                <input type="text" class="form-control" id="recipient-name" />
-              </div>
-              <div class="mb-3">
-                <label for="message-text" class="col-form-label"
-                  >Message:</label
-                >
-                <textarea class="form-control" id="message-text"></textarea>
-              </div>
-            </form>
+            <div class="mb-3">
+              <label for="track-number" class="col-form-label"
+                >Track number:</label
+              >
+              <input type="text" id="track-number" />
+            </div>
+            <div class="mb-3">
+              <label for="track-title" class="col-form-label"
+                >Track title:</label
+              >
+              <input type="text" id="track-title" />
+            </div>
+            <div class="mb-3">
+              <label for="track-duration" class="col-form-label"
+                >Track duration:</label
+              >
+              <input type="text" id="track-duration" />
+            </div>
+            <div class="mb-3">
+              <label for="track-feature" class="col-form-label"
+                >Track feature:</label
+              >
+              <input type="text" id="track-feature" />
+            </div>
+            <div class="mb-3">
+              <input type="checkbox" id="live-track-checkbox" />
+              <label for="live-track-checkbox" class="col-form-label"
+                >Live track</label
+              >
+            </div>
           </div>
           <div class="modal-footer">
             <button
               type="button"
               class="btn btn-secondary"
               data-bs-dismiss="modal"
+              onclick="btnClose()"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="validation()"
+            >
+              Add
+            </button>
           </div>
         </div>
       </div>
